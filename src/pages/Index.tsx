@@ -95,8 +95,12 @@ const Index = () => {
                               flex items-center justify-center shadow-2xl animate-float">
                   <div className="w-72 h-72 lg:w-88 lg:h-88 rounded-full bg-white flex items-center justify-center">
                     <div className="text-8xl rounded-full" >
+<<<<<<< HEAD
                       <img src="/dp.jpg" alt="chotu" className="rounded-full" />
 
+=======
+                      <img src="../../public/DP.jpg" alt="Raghav photo" className='rounded-full' />
+>>>>>>> 51dfd76 (first version)
                     </div>
                   </div>
                 </div>

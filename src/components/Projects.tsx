@@ -32,14 +32,21 @@ const Projects = () => {
     'Improves decision-making for crop advisory and fertilizer distribution',
     'Backed by Krishi Seva: 50% more efficient crop advisory, 35% more farmer registrations, 25% better weather alerts'
   ],
+<<<<<<< HEAD
   image: '/images/krishiseva.png',
+=======
+  image: '../../../public/images/Krishi-Seva.png',
+>>>>>>> 51dfd76 (first version)
   liveUrl: '#',
   githubUrl: '#',
   gradient: 'from-green-400 to-blue-500'
 },
 
+<<<<<<< HEAD
 // hello
 
+=======
+>>>>>>> 51dfd76 (first version)
     {
       title: 'Wanderlust',
       description: 'Full-stack travel platform built with MERN stack for listing and booking hotels globally with interactive user interface.',
