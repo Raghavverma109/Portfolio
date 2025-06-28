@@ -38,6 +38,8 @@ const Projects = () => {
   gradient: 'from-green-400 to-blue-500'
 },
 
+// hello
+
     {
       title: 'Wanderlust',
       description: 'Full-stack travel platform built with MERN stack for listing and booking hotels globally with interactive user interface.',
