@@ -9,7 +9,7 @@ const Certifications = () => {
       issuer: 'Ministry of Education, Government of India',
       date: 'December, 2024',
       description: 'Participation in the Grand Finale of Smart India Hackathon 2024 held on December 11–12',
-      image: '../../public/images/SIH24.jpg', // Make sure to replace this with the correct image path
+      image: '/SIH24.jpg', // Make sure to replace this with the correct image path
       link: '#' // You can replace this with a certificate verification link if available
     },
 
@@ -18,7 +18,7 @@ const Certifications = () => {
       issuer: 'Softpro India Computer Limited',
       date: 'April,2024',
       description: 'Comprehensive Java programming fundamentals and OOP concepts',
-      image: '../../public/images/Java.jpg',
+      image: '/Java.jpg',
       link: '#'
     },
     {
@@ -26,7 +26,7 @@ const Certifications = () => {
       issuer: 'Codechef',
       date: 'Dec,2024',
       description: 'Advanced DSA Questions and best practices',
-      image: '../../public/images/codeChef.jpg',
+      image: '/codeChef.jpg',
       link: '#'
     },
     {
@@ -34,7 +34,7 @@ const Certifications = () => {
       issuer: 'SoarX',
       date: 'April, 2024',
       description: 'Participation in API 101 using Postman organized by SoarX and Postman Student Leader',
-      image: '../../public/images/postman.png',
+      image: '/postman.png',
       link: '#' // Replace with actual certificate verification link if needed
     },
     // {

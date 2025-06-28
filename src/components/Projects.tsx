@@ -32,7 +32,7 @@ const Projects = () => {
     'Improves decision-making for crop advisory and fertilizer distribution',
     'Backed by Krishi Seva: 50% more efficient crop advisory, 35% more farmer registrations, 25% better weather alerts'
   ],
-  image: '../../../public/images/Krishi-Seva.png',
+  image: '/Krishi-Seva.png',
   liveUrl: '#',
   githubUrl: '#',
   gradient: 'from-green-400 to-blue-500'
