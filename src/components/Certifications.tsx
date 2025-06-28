@@ -34,7 +34,7 @@ const Certifications = () => {
       issuer: 'SoarX',
       date: 'April, 2024',
       description: 'Participation in API 101 using Postman organized by SoarX and Postman Student Leader',
-      image: '/postman.png',
+      image: '/images/postman.png',
       link: '#' // Replace with actual certificate verification link if needed
     },
     // {
