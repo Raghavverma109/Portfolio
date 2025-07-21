@@ -18,7 +18,7 @@ const Certifications = () => {
       issuer: 'Softpro India Computer Limited',
       date: 'April,2024',
       description: 'Comprehensive Java programming fundamentals and OOP concepts',
-      image: '../../public/images/Java.jpg',
+      image: 'images/Java.jpg',
       link: '#'
     },
     {
@@ -26,7 +26,7 @@ const Certifications = () => {
       issuer: 'Codechef',
       date: 'Dec,2024',
       description: 'Advanced DSA Questions and best practices',
-      image: '../../public/images/codeChef.jpg',
+      image: 'images/codeChef.jpg',
       link: '#'
     },
     {
@@ -34,7 +34,7 @@ const Certifications = () => {
       issuer: 'SoarX',
       date: 'April, 2024',
       description: 'Participation in API 101 using Postman organized by SoarX and Postman Student Leader',
-      image: '../../public/images/postman.png',
+      image: 'images/postman.png',
       link: '#' // Replace with actual certificate verification link if needed
     },
     // {
