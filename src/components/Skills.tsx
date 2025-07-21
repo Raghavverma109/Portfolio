@@ -31,7 +31,7 @@ const Skills = () => {
     },
     {
       title: 'Tools & Others',
-      skills: ['Git', 'GitHub',],
+      skills: ['Git', 'GitHub','Postman', 'Vercel'],
       color: 'from-gray-600 to-gray-800'
     }
   ];

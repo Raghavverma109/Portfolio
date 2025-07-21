@@ -15,7 +15,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
       <NetworkBackground />
       <Navigation />
-      
+
       {/* Hero Section */}
       <section id="home" className="pt-20 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,7 +33,7 @@ const Index = () => {
                 <p className="text-xl text-gray-700 mb-8">
                   I Am Into <span className="text-red-600 font-semibold">Full-Stack Development</span>
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                   <button
                     onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
@@ -91,6 +91,7 @@ const Index = () => {
             {/* Right Content - Profile Image Placeholder */}
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="relative">
+<<<<<<< HEAD
                 <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 
                               flex items-center justify-center shadow-2xl animate-float">
                   <div className="w-72 h-72 lg:w-88 lg:h-88 rounded-full bg-white flex items-center justify-center">
@@ -101,31 +102,41 @@ const Index = () => {
 =======
                       <img src="../../public/DP.jpg" alt="Raghav photo" className='rounded-full' />
 >>>>>>> 51dfd76 (first version)
+=======
+                <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full animate-float shadow-2xl ">
+                    <div className="absolute inset-2 bg-white rounded-full">
+                      <img
+                        src="/DP.jpg"
+                        alt="Raghav photo"
+                        className="w-full h-full rounded-full object-cover transform rotate-[-6deg]"
+                      />
+>>>>>>> 28f4471 (second update)
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-lg 
+                {/* <div className="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-lg 
                               flex items-center justify-center shadow-lg animate-float"
-                     style={{ animationDelay: '0.5s' }}>
+                  style={{ animationDelay: '0.5s' }}>
                   <span className="text-2xl">⚛️</span>
                 </div>
                 <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-green-400 rounded-lg 
                               flex items-center justify-center shadow-lg animate-float"
-                     style={{ animationDelay: '1s' }}>
+                  style={{ animationDelay: '1s' }}>
                   <span className="text-2xl">💻</span>
                 </div>
                 <div className="absolute top-1/2 -left-8 w-12 h-12 bg-blue-400 rounded-lg 
                               flex items-center justify-center shadow-lg animate-float"
-                     style={{ animationDelay: '1.5s' }}>
+                  style={{ animationDelay: '1.5s' }}>
                   <span className="text-xl">🚀</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
 
-    
+
         </div>
       </section>
 
