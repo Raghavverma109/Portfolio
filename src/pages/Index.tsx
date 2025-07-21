@@ -91,18 +91,6 @@ const Index = () => {
             {/* Right Content - Profile Image Placeholder */}
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="relative">
-<<<<<<< HEAD
-                <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 
-                              flex items-center justify-center shadow-2xl animate-float">
-                  <div className="w-72 h-72 lg:w-88 lg:h-88 rounded-full bg-white flex items-center justify-center">
-                    <div className="text-8xl rounded-full" >
-<<<<<<< HEAD
-                      <img src="/dp.jpg" alt="chotu" className="rounded-full" />
-
-=======
-                      <img src="../../public/DP.jpg" alt="Raghav photo" className='rounded-full' />
->>>>>>> 51dfd76 (first version)
-=======
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full animate-float shadow-2xl ">
                     <div className="absolute inset-2 bg-white rounded-full">
@@ -111,7 +99,7 @@ const Index = () => {
                         alt="Raghav photo"
                         className="w-full h-full rounded-full object-cover transform rotate-[-6deg]"
                       />
->>>>>>> 28f4471 (second update)
+
                     </div>
                   </div>
                 </div>
