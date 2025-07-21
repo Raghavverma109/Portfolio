@@ -95,7 +95,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full animate-float shadow-2xl ">
                     <div className="absolute inset-2 bg-white rounded-full">
                       <img
-                        src="DP.jpg"
+                        src="/DP.jpg"
                         alt="Raghav photo"
                         className="w-full h-full rounded-full object-cover transform rotate-[-6deg]"
                       />
