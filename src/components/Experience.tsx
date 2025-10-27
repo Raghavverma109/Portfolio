@@ -120,24 +120,48 @@ const Experience = () => {
         </div>
 
         {/* Professional Experience */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Professional Experience</h3>
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <div className="flex items-start">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-6">
-                <Code className="text-blue-600" size={24} />
-              </div>
-              <div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">Full-Stack Developer</h4>
-                <p className="text-blue-600 font-semibold mb-4">Project-based Experience</p>
-                <p className="text-gray-600 leading-relaxed">
-                  Gained hands-on experience working on full-stack projects, developing both frontend and backend solutions.
-                  Focused on creating scalable web applications using modern technologies like React, Node.js, and MongoDB.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      
+
+<div className="mb-16">
+  <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+    Professional Experience
+  </h3>
+  <div className="bg-white rounded-lg shadow-lg p-8">
+    <div className="flex items-start">
+      {/* Icon: Keeping the current style and icon (Code) for development */}
+      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-6">
+        <Code className="text-blue-600" size={24} />
+      </div>
+      <div>
+        {/* Job Title */}
+        <h4 className="text-xl font-bold text-gray-900 mb-2">
+          MERN Stack Developer Intern
+        </h4>
+        
+        {/* Company and Dates */}
+        <p className="text-blue-600 font-semibold mb-2">
+          OutriX
+        </p>
+        <p className="text-gray-500 text-sm mb-4">
+          Sep 2025 – Oct 2025 (1 months)
+        </p>
+
+        {/* Bulleted Description */}
+        <ul className="text-gray-600 leading-relaxed list-disc list-inside space-y-1">
+          <li>
+            Developed **full-stack MERN applications** with a strong focus on backend architecture and **REST API design**.
+          </li>
+          <li>
+            **Led database schema design** for scalable features and implemented **secure APIs** using Express.js.
+          </li>
+          <li>
+            Followed **Agile methodology** with sprint-based deliveries, actively collaborating with peers on code debugging and feature integration.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
         {/* Academic Journey */}
         <div className="mb-16">

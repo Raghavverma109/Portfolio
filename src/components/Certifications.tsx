@@ -12,6 +12,30 @@ const Certifications = () => {
       image: 'images/SIH24.jpg', // Make sure to replace this with the correct image path
       link: '#' // You can replace this with a certificate verification link if available
     },
+    {
+      title: 'Certificate of Internship', // The title on the certificate
+      issuer: 'OutriX', // The issuing organization
+      date: 'Oct 1, 2025', // The completion date of the internship
+      description: 'Successfully completed 1 Month Internship as a MERN Stack Developer at OutriX (Sep 1 – Oct 1, 2025). The remote internship included hands-on training, project work, and skill enhancement.', // Detailed description summarizing the role and duration
+      image: 'images/OutriX_Internship.jpg', // Placeholder: Update this with your certificate image path
+      link: '#' // You can replace this with the certificate reference link if OutriX provided a verification page (Ref: OX925MD379)
+    },
+    {
+      title: 'AWS Essentials: A Complete Beginner\'s Guide', // Title of the course 
+      issuer: 'Udemy', // Issuing platform 
+      date: 'Aug. 9, 2025', // Completion date 
+      description: 'Completed a 5.5 total hour course covering AWS essentials for beginners, instructed by Learnify IT.', // Detailed description 
+      image: 'images/AWS_Essentials.jpg', // Placeholder: Update this with your AWS certificate image path
+      link: 'ude.my/UC-1a53cfbc-3332-4e19-81b2-7086eb0856c2' // Certificate verification URL 
+    },
+    {
+      title: 'Introduction to Deep Learning', // Title of the course [cite: 5]
+      issuer: 'Infosys Springboard', // Issuing platform [cite: 7]
+      date: 'September 25, 2025', // Completion date [cite: 6, 9]
+      description: 'Successfully completed the Introduction to Deep Learning course provided by Infosys Springboard.', // Detailed description
+      image: 'images/Infosys_DeepLearning.jpg', // Placeholder: Update this with your certificate image path
+      link: 'https://verify.onwingspan.com' // Verification link (as indicated by the QR code text) [cite: 10]
+    },
 
     {
       title: 'Core Java Course',
@@ -37,22 +61,13 @@ const Certifications = () => {
       image: 'images/postman.png',
       link: '#' // Replace with actual certificate verification link if needed
     },
-    // {
-    //   title: 'Full Stack Web Development',
-    //   issuer: 'Online Course',
-    //   date: '2024',
-    //   description: 'Complete MERN stack development course with practical projects',
-    //   image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop',
-    //   link: '#'
-    // },
-    // {
-    //   title: 'Data Structures & Algorithms',
-    //   issuer: 'Coding Platform',
-    //   date: '2024',
-    //   description: 'Advanced problem-solving and algorithmic thinking certification',
-    //   image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
-    //   link: '#'
-    // }
+  {
+  title: 'Postman API Fundamentals Student Expert', // Title of the certification [cite: 17]
+  issuer: 'Postman', // Issuing organization [cite: 22, 23]
+  date: 'July 13, 2025', // Awarded date [cite: 20, 21]
+  description: 'Certified in API Fundamentals, demonstrating expertise in utilizing Postman for API testing, design, and documentation.', // Detailed description
+  image: 'images/Postman_API_Fundamentals_Badge.png', // Placeholder: Update this with the path to your badge image   [cite_start]link: 'https://postman.com' // Link to the issuer's website or a verification page (if available) [cite: 13]
+},
   ];
 
   return (
