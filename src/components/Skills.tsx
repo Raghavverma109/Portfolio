@@ -6,7 +6,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Programming Languages',
-      skills: ['C', 'C++',"Java",'Python','JavaScript','TypeScript ', '...so on'],
+      skills: ['C', 'C++','Python','JavaScript','TypeScript'],
       color: 'from-blue-500 to-purple-600'
     },
     {
@@ -16,22 +16,22 @@ const Skills = () => {
     },
     {
       title: 'Framework / Libraries ',
-      skills: ['ReactJS', 'Next.js', 'React native', 'Bootstrap'],
+      skills: ['ReactJS', 'Next.js', 'React native', 'Bootstrap', 'Material UI'],
       color: 'from-green-500 to-blue-500'
     },
     {
       title: 'Backend ',
-      skills: ['Node.js', 'Express.js', 'RESTful APIs'],
+      skills: ['Node.js', 'Express.js','Supabase', 'RESTful APIs','Socket.IO'],
       color: 'from-orange-500 to-red-500'
     },
     {
       title: 'Databases',
-      skills: ['MongoDB', 'SQL'],
+      skills: ['MongoDB', 'SQL','PostgreSQL'],
       color: 'from-purple-500 to-pink-500'
     },
     {
       title: 'Tools & Others',
-      skills: ['Git', 'GitHub','Postman', 'Vercel'],
+      skills: ['Git', 'GitHub','Postman','Docker', 'Vercel','Render'],
       color: 'from-gray-600 to-gray-800'
     }
   ];

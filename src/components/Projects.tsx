@@ -19,6 +19,25 @@ const Projects = () => {
       githubUrl: '#',
       gradient: 'from-green-400 to-blue-500'
     },
+      {
+    title: 'VoteSafe - Secure Online Voting Platform',
+    description: 'A complete, full-stack MERN (MongoDB, Express.js, React.js, Node.js) application for secure and transparent online elections. Features real-time results, interactive geographical visualizations, and robust admin controls.',
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Tailwind CSS', 'React Leaflet', 'Recharts', 'Cloudinary', 'bcrypt'],
+    features: [
+        'Secure User Authentication & Authorization (JWT, Aadhar-based login, Role-Based Access)',
+        'Comprehensive Admin Panel: Full CRUD for Elections, Candidates, and Parties (with Cloudinary image uploads)',
+        'Real-time Live Results Dashboard: Dynamic charts (Recharts) with vote counts, updated every 3 seconds',
+        'Interactive Geographical Map: Visualize election results state-by-state using React Leaflet, with colored overlays and popups',
+        'Transparent Audit Trail: Admins can view voter participation lists (while preserving vote secrecy)',
+        'Strict Voting Rules: One vote per user, age verification (18+), admin vote restriction',
+        'Responsive and Modern UI/UX built with Tailwind CSS'
+    ],
+    
+    image: 'https://private-user-images.githubusercontent.com/146425978/505654599-15d0804f-11d8-417e-acb7-82626deefcc6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1OTkyMzEsIm5iZiI6MTc2MTU5ODkzMSwicGF0aCI6Ii8xNDY0MjU5NzgvNTA1NjU0NTk5LTE1ZDA4MDRmLTExZDgtNDE3ZS1hY2I3LTgyNjI2ZGVlZmNjNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAyN1QyMTAyMTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNTk1NThiZjI4NWYyOTBiMWRhNTM3YmY1MzM5YTZkNjdiZjY2NGJkNTJhYjYwMDA3NTA4MWMxY2RkNjdmNGY2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ga4HXTnfT5T0ZlKm0Ss05WVzzqcSBVF-pDj9plJ9Jys', // Placeholder - use your best screenshot!
+    liveUrl: 'https://votesafe.vercel.app/', // Your actual deployed Vercel link
+    githubUrl: 'https://github.com/Raghavverma109/voting_app', // Set to null or remove if you're keeping the repo private
+    gradient: 'from-purple-500 to-indigo-600' // A more vibrant gradient perhaps? Or keep your original.
+},
     {
   title: 'Krishi Seva',
   description: 'A smart agriculture platform that collects real-time soil data from vending machines deployed across multiple districts, enabling centralized analysis of nutrient deficiencies. The system empowers government officials and researchers with a dedicated administrative website to track soil health trends and make informed policy decisions.',
@@ -53,40 +72,7 @@ const Projects = () => {
       githubUrl: '#',
       gradient: 'from-purple-400 to-pink-500'
     },
-//     {
-//   title: 'CreatorHub Platform',
-//   description: 'A powerful and modern web platform for content creators to publish, manage, and grow their audience with advanced tools, analytics, and collaboration features.',
-//   tech: ['Node.js', 'Express.js', 'MongoDB', 'Vue.js', 'Tailwind CSS', 'JWT', 'EJS'],
-//   features: [
-//     'Secure user registration, login, and role-based access (creator/admin)',
-//     'Content creation and management (blogs, videos, tutorials)',
-//     'Rich-text editor and media uploads',
-//     'Analytics dashboard to track views, engagement, and performance',
-//     'Responsive and clean UI/UX for creators and viewers',
-//     'Admin panel for approving content and managing users'
-//   ],
-//   image: 'https://images.unsplash.com/photo-1612277793319-6d02d98311b2?w=600&h=400&fit=crop',
-//   liveUrl: '#', // Replace with actual deployment URL
-//   githubUrl: 'https://github.com/YourUsername/creatorhub-platform', // Replace with your actual GitHub repo
-//   gradient: 'from-yellow-500 to-pink-600'
-// },
-    {
-      title: 'Voting Application',
-      description: 'A secure and scalable voting system built with Node.js, enabling users to vote for candidates with real-time vote counts and authentication via Aadhar number.',
-      tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'bcrypt'],
-      features: [
-        'User sign-up and login using Aadhar number and password',
-        'Role-based access: admin and users',
-        'Vote for candidates (once only)',
-        'Live vote count route sorted by vote totals',
-        'Admin-only candidate management',
-        'Secure password handling and update functionality'
-      ],
-      image: 'https://www.soteria-int.com/wp-content/uploads/2020/04/Voting-App-article-hacking.png',
-      liveUrl: '#', // If you deploy it later, update this
-      githubUrl: 'https://github.com/Raghavverma109/voting_app',
-      gradient: 'from-green-400 to-blue-500'
-    },
+ 
     {
       title: 'Node Hotel Application',
       description: 'RESTful web application for hotel management with complete CRUD operations and role-based access control.',
@@ -99,7 +85,7 @@ const Projects = () => {
       ],
       image: 'https://korvage.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-02-at-10.24.45-AM-1024x384.jpeg',
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Raghavverma109/Hotel-Application-Server',
       gradient: 'from-orange-400 to-red-500'
     },
 {
