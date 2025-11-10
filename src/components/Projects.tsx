@@ -19,11 +19,11 @@ const Projects = () => {
       githubUrl: '#',
       gradient: 'from-green-400 to-blue-500'
     },
-      {
-    title: 'VoteSafe - Secure Online Voting Platform',
-    description: 'A complete, full-stack MERN (MongoDB, Express.js, React.js, Node.js) application for secure and transparent online elections. Features real-time results, interactive geographical visualizations, and robust admin controls.',
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Tailwind CSS', 'React Leaflet', 'Recharts', 'Cloudinary', 'bcrypt'],
-    features: [
+    {
+      title: 'VoteSafe - Secure Online Voting Platform',
+      description: 'A complete, full-stack MERN (MongoDB, Express.js, React.js, Node.js) application for secure and transparent online elections. Features real-time results, interactive geographical visualizations, and robust admin controls.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Tailwind CSS', 'React Leaflet', 'Recharts', 'Cloudinary', 'bcrypt'],
+      features: [
         'Secure User Authentication & Authorization (JWT, Aadhar-based login, Role-Based Access)',
         'Comprehensive Admin Panel: Full CRUD for Elections, Candidates, and Parties (with Cloudinary image uploads)',
         'Real-time Live Results Dashboard: Dynamic charts (Recharts) with vote counts, updated every 3 seconds',
@@ -31,31 +31,53 @@ const Projects = () => {
         'Transparent Audit Trail: Admins can view voter participation lists (while preserving vote secrecy)',
         'Strict Voting Rules: One vote per user, age verification (18+), admin vote restriction',
         'Responsive and Modern UI/UX built with Tailwind CSS'
-    ],
-    
-    image: 'https://private-user-images.githubusercontent.com/146425978/505654599-15d0804f-11d8-417e-acb7-82626deefcc6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1OTkyMzEsIm5iZiI6MTc2MTU5ODkzMSwicGF0aCI6Ii8xNDY0MjU5NzgvNTA1NjU0NTk5LTE1ZDA4MDRmLTExZDgtNDE3ZS1hY2I3LTgyNjI2ZGVlZmNjNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAyN1QyMTAyMTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNTk1NThiZjI4NWYyOTBiMWRhNTM3YmY1MzM5YTZkNjdiZjY2NGJkNTJhYjYwMDA3NTA4MWMxY2RkNjdmNGY2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ga4HXTnfT5T0ZlKm0Ss05WVzzqcSBVF-pDj9plJ9Jys', // Placeholder - use your best screenshot!
-    liveUrl: 'https://votesafe.vercel.app/', // Your actual deployed Vercel link
-    githubUrl: 'https://github.com/Raghavverma109/voting_app', // Set to null or remove if you're keeping the repo private
-    gradient: 'from-purple-500 to-indigo-600' // A more vibrant gradient perhaps? Or keep your original.
-},
+      ],
+
+      image: '/images/voteSafe.png',
+      liveUrl: 'https://votesafe.vercel.app/', // Your actual deployed Vercel link
+      githubUrl: 'https://github.com/Raghavverma109/voting_app', // Set to null or remove if you're keeping the repo private
+      gradient: 'from-purple-500 to-indigo-600' // A more vibrant gradient perhaps? Or keep your original.
+    },
     {
-  title: 'Krishi Seva',
-  description: 'A smart agriculture platform that collects real-time soil data from vending machines deployed across multiple districts, enabling centralized analysis of nutrient deficiencies. The system empowers government officials and researchers with a dedicated administrative website to track soil health trends and make informed policy decisions.',
-  tech: ['HTML','CSS','JavaScript', 'AI/ML', 'Power BI', 'MongoDB', 'IoT Sensors'],
-  features: [
-    'Government administrative dashboard for centralized soil health monitoring',
-    'Automatic data upload from IoT-based vending machines located in various districts',
-    'District-wise nutrient deficiency mapping and analysis tools for researchers',
-    'Real-time insights into regional agricultural conditions for policymaking',
-    'Support for large-scale data aggregation from multi-location deployments',
-    'Improves decision-making for crop advisory and fertilizer distribution',
-    'Backed by Krishi Seva: 50% more efficient crop advisory, 35% more farmer registrations, 25% better weather alerts'
-  ],
-  image: '/images/krishiseva.png',
-  liveUrl: '#',
-  githubUrl: '#',
-  gradient: 'from-green-400 to-blue-500'
-},
+      title: 'Uber Clone',
+      description: 'A full-stack real-time ride-booking web application inspired by Uber, enabling users to book rides, captains to accept them, and both to track progress live on a map. Built using the MERN stack with Socket.io and Mapbox, it delivers a smooth, interactive experience with real-time geolocation, captain discovery, and dynamic ride updates.',
+      tech: ['ReactJS', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Leaflet.js', 'Mapbox', 'TailwindCSS', 'JWT'],
+      features: [
+        'User and Captain authentication with secure JWT-based login system',
+        'Real-time ride requests and captain availability tracking using Socket.io',
+        'GeoJSON-based nearby captain search using MongoDB 2dsphere queries',
+        'Interactive Leaflet map integrated with Mapbox for smooth routing and live tracking',
+        'Auto-suggestion for pickup and destination locations using Nominatim API (OpenStreetMap)',
+        'Real-time captain movement updates displayed live on the user map',
+        'Comprehensive ride lifecycle management — from request to completion',
+        'Vehicle management module for captains with vehicle details and ride status control',
+        'Modern and responsive frontend built with ReactJS and TailwindCSS'
+      ],
+      image: '/images/uber.png',
+      liveUrl: '#',
+      githubUrl: 'https://github.com/Raghavverma109/UBER-APP',
+      gradient: 'from-gray-700 to-blue-500'
+    },
+
+
+    {
+      title: 'Krishi Seva',
+      description: 'A smart agriculture platform that collects real-time soil data from vending machines deployed across multiple districts, enabling centralized analysis of nutrient deficiencies. The system empowers government officials and researchers with a dedicated administrative website to track soil health trends and make informed policy decisions.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'AI/ML', 'Power BI', 'MongoDB', 'IoT Sensors'],
+      features: [
+        'Government administrative dashboard for centralized soil health monitoring',
+        'Automatic data upload from IoT-based vending machines located in various districts',
+        'District-wise nutrient deficiency mapping and analysis tools for researchers',
+        'Real-time insights into regional agricultural conditions for policymaking',
+        'Support for large-scale data aggregation from multi-location deployments',
+        'Improves decision-making for crop advisory and fertilizer distribution',
+        'Backed by Krishi Seva: 50% more efficient crop advisory, 35% more farmer registrations, 25% better weather alerts'
+      ],
+      image: '/images/krishiseva.png',
+      liveUrl: '#',
+      githubUrl: '#',
+      gradient: 'from-green-400 to-blue-500'
+    },
 
     {
       title: 'Wanderlust',
@@ -72,7 +94,7 @@ const Projects = () => {
       githubUrl: '#',
       gradient: 'from-purple-400 to-pink-500'
     },
- 
+
     {
       title: 'Node Hotel Application',
       description: 'RESTful web application for hotel management with complete CRUD operations and role-based access control.',
@@ -88,22 +110,22 @@ const Projects = () => {
       githubUrl: 'https://github.com/Raghavverma109/Hotel-Application-Server',
       gradient: 'from-orange-400 to-red-500'
     },
-{
-  title: 'Smart ToDo App',
-  description: 'An intelligent and voice-assisted ToDo web application built for productivity, allowing users to manage daily tasks seamlessly with an intuitive interface.',
-  tech: ['React.js', 'Next.js', 'MongoDB', 'Tailwind CSS', 'JavaScript', 'Web Speech API'],
-  features: [
-    'User registration and login with JWT authentication',
-    'Create, edit, delete, and mark tasks as completed',
-    'Task filtering (completed / pending)',
-    'Voice-assisted task addition using Web Speech API',
-    'Responsive and minimalist UI for a smooth user experience'
-  ],
-  image: 'https://res.cloudinary.com/imagist/image/fetch/q_auto,f_auto,c_scale,w_1536/https%3A%2F%2Fwww.todoist.com%2Fstatic%2Fhome-teams%2Fintro%2Fwide%2Fheaderui.en.png',
-  liveUrl: '#', // Add your deployment link if available
-  githubUrl: 'https://github.com/Raghavverma109/smart-todo',
-  gradient: 'from-purple-500 to-indigo-600'
-}
+    {
+      title: 'Smart ToDo App',
+      description: 'An intelligent and voice-assisted ToDo web application built for productivity, allowing users to manage daily tasks seamlessly with an intuitive interface.',
+      tech: ['React.js', 'Next.js', 'MongoDB', 'Tailwind CSS', 'JavaScript', 'Web Speech API'],
+      features: [
+        'User registration and login with JWT authentication',
+        'Create, edit, delete, and mark tasks as completed',
+        'Task filtering (completed / pending)',
+        'Voice-assisted task addition using Web Speech API',
+        'Responsive and minimalist UI for a smooth user experience'
+      ],
+      image: 'https://res.cloudinary.com/imagist/image/fetch/q_auto,f_auto,c_scale,w_1536/https%3A%2F%2Fwww.todoist.com%2Fstatic%2Fhome-teams%2Fintro%2Fwide%2Fheaderui.en.png',
+      liveUrl: '#', // Add your deployment link if available
+      githubUrl: '#',
+      gradient: 'from-purple-500 to-indigo-600'
+    }
 
 
 
@@ -136,6 +158,7 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                     <div className="flex space-x-4">
+                      {project.liveUrl && project.liveUrl !== '#' && (
                       <a
                         href={project.liveUrl}
                         target="_blank"
@@ -145,6 +168,9 @@ const Projects = () => {
                         <Eye size={16} className="mr-2" />
                         Live Preview
                       </a>
+                      )}
+
+                      {project.githubUrl && project.githubUrl !== '#' && (
                       <a
                         href={project.githubUrl}
                         target="_blank"
@@ -154,6 +180,7 @@ const Projects = () => {
                         <Github size={16} className="mr-2" />
                         View Code
                       </a>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -189,29 +216,7 @@ const Projects = () => {
                         ))}
                       </div>
                     </div>
-                  </div>
-
-                  {/* Action Buttons */}
-                  {/* <div className="flex space-x-4">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 bg-blue-600 text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center"
-                    >
-                      <Eye size={18} className="mr-2" />
-                      Live Preview
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 border-2 border-gray-800 text-gray-800 text-center py-3 px-6 rounded-lg font-semibold hover:bg-gray-800 hover:text-white transition-colors flex items-center justify-center"
-                    >
-                      <Github size={18} className="mr-2" />
-                      View Code
-                    </a>
-                  </div> */}
+                  </div> 
                 </div>
               </div>
             </div>
