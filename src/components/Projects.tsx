@@ -96,6 +96,22 @@ const Projects = () => {
     },
 
     {
+      title: 'Ochi Design',
+      description: 'A pixel-perfect clone of the award-winning Ochi website, featuring advanced scroll animations and a modern, high-performance UI.',
+      tech: ['React.js', 'Tailwind CSS', 'Framer Motion', 'Locomotive Scroll', 'GSAP'],
+      features: [
+        'Smooth scrolling integration (Locomotive Scroll)',
+        'Complex interactive animations (Framer Motion)',
+        'Responsive and modern minimalist layout',
+        'Custom cursor and hover effects'
+      ],
+      image: '/images/ochi.png',
+      liveUrl: 'https://ochi-design-virid.vercel.app/',
+      githubUrl: 'https://github.com/Raghavverma109/Ochi.Design',
+      gradient: 'from-green-400 to-emerald-600' // Matches the Ochi brand accent color
+    },
+
+    {
       title: 'Node Hotel Application',
       description: 'RESTful web application for hotel management with complete CRUD operations and role-based access control.',
       tech: ['Node.js', 'Express.js', 'MongoDB', 'Passport.js', 'bcrypt'],
@@ -159,27 +175,27 @@ const Projects = () => {
                   <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                     <div className="flex space-x-4">
                       {project.liveUrl && project.liveUrl !== '#' && (
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center hover:bg-blue-700 transition-colors"
-                      >
-                        <Eye size={16} className="mr-2" />
-                        Live Preview
-                      </a>
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center hover:bg-blue-700 transition-colors"
+                        >
+                          <Eye size={16} className="mr-2" />
+                          Live Preview
+                        </a>
                       )}
 
                       {project.githubUrl && project.githubUrl !== '#' && (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center hover:bg-gray-900 transition-colors"
-                      >
-                        <Github size={16} className="mr-2" />
-                        View Code
-                      </a>
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center hover:bg-gray-900 transition-colors"
+                        >
+                          <Github size={16} className="mr-2" />
+                          View Code
+                        </a>
                       )}
                     </div>
                   </div>
@@ -216,7 +232,7 @@ const Projects = () => {
                         ))}
                       </div>
                     </div>
-                  </div> 
+                  </div>
                 </div>
               </div>
             </div>
