@@ -19,15 +19,16 @@ const Projects = () => {
     },
     {
       title: 'Wanderlust',
-      description: 'Full-stack travel platform built with MERN stack for listing and booking hotels globally with interactive user interface.',
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Bootstrap'],
-      features: [
-        'Global hotel listing and search functionality',
-        'User authentication and booking system',
-        'Responsive design with Bootstrap',
-        'RESTful API architecture'
-      ],
-      gradient: 'from-purple-400 to-pink-500'
+      description: 'A production-ready travel marketplace for global property listings, featuring server-side rendering, secure authentication, and integrated AI support.',
+  tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'Bootstrap', 'Cloudinary'],
+     features: [
+    'MVC Architecture with EJS for SEO-friendly Server-Side Rendering',
+    'AI-powered Chatbot for real-time customer support and queries',
+    'Secure Media Hosting via Cloudinary API and Multer storage',
+    'Automated SMTP email notifications via Nodemailer',
+    'Advanced Geocoding with map-based location visualization'
+  ],
+      gradient: 'from-rose-500 to-orange-400'
     },
     {
       title: 'Node Hotel Application',
