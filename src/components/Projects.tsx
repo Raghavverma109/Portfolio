@@ -79,22 +79,22 @@ const Projects = () => {
       gradient: 'from-green-400 to-blue-500'
     },
 
- {
-  title: 'Wanderlust',
-  description: 'A production-ready travel marketplace for global property listings, featuring server-side rendering, secure authentication, and integrated AI support.',
-  tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'Bootstrap', 'Cloudinary'],
-  features: [
-    'MVC Architecture with EJS for SEO-friendly Server-Side Rendering',
-    'AI-powered Chatbot for real-time customer support and queries',
-    'Secure Media Hosting via Cloudinary API and Multer storage',
-    'Automated SMTP email notifications via Nodemailer',
-    'Advanced Geocoding with map-based location visualization'
-  ],
-  image: '/images/Wanderlust.png',
-  liveUrl: 'https://wanderlust-travel-application.onrender.com',
-  githubUrl: 'https://github.com/Raghavverma109/wanderlust', // Verified from your user summary
-  gradient: 'from-rose-500 to-orange-400' // Matches the "Wanderlust Red" brand color
-},
+    {
+      title: 'Wanderlust',
+      description: 'A production-ready travel marketplace for global property listings, featuring server-side rendering, secure authentication, and integrated AI support.',
+      tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'Bootstrap', 'Cloudinary'],
+      features: [
+        'MVC Architecture with EJS for SEO-friendly Server-Side Rendering',
+        'AI-powered Chatbot for real-time customer support and queries',
+        'Secure Media Hosting via Cloudinary API and Multer storage',
+        'Automated SMTP email notifications via Nodemailer',
+        'Advanced Geocoding with map-based location visualization'
+      ],
+      image: '/images/Wanderlust.png',
+      liveUrl: 'https://wanderlust-travel-application.onrender.com',
+      githubUrl: 'https://github.com/Raghavverma109/wanderlust', // Verified from your user summary
+      gradient: 'from-rose-500 to-orange-400' // Matches the "Wanderlust Red" brand color
+    },
     {
       title: 'Ochi Design',
       description: 'A pixel-perfect clone of the award-winning Ochi website, featuring advanced scroll animations and a modern, high-performance UI.',
@@ -128,23 +128,20 @@ const Projects = () => {
     },
     {
       title: 'Smart ToDo App',
-      description: 'An intelligent and voice-assisted ToDo web application built for productivity, allowing users to manage daily tasks seamlessly with an intuitive interface.',
-      tech: ['React.js', 'Next.js', 'MongoDB', 'Tailwind CSS', 'JavaScript', 'Web Speech API'],
+      description: 'An intelligent, voice-assisted task management application built with Next.js. It features natural language time parsing and native browser notifications to help users manage their daily tasks hands-free.',
+      tech: ['Next.js', 'React', 'Tailwind CSS', 'Web Speech API', 'Web Audio API'],
       features: [
-        'User registration and login with JWT authentication',
-        'Create, edit, delete, and mark tasks as completed',
-        'Task filtering (completed / pending)',
-        'Voice-assisted task addition using Web Speech API',
-        'Responsive and minimalist UI for a smooth user experience'
+        'Voice-assisted task creation utilizing the native Web Speech API',
+        'Natural language time parsing (e.g., "in 30 mins", "at 12:30 PM") for automatic reminder scheduling',
+        'Real-time browser push notifications paired with custom Web Audio API beep alerts',
+        'Secure, local data persistence using sessionStorage for immediate, backend-free access',
+        'Responsive, minimalist UI built with Tailwind CSS for an optimal cross-device experience'
       ],
       image: 'https://res.cloudinary.com/imagist/image/fetch/q_auto,f_auto,c_scale,w_1536/https%3A%2F%2Fwww.todoist.com%2Fstatic%2Fhome-teams%2Fintro%2Fwide%2Fheaderui.en.png',
-      liveUrl: '#', // Add your deployment link if available
-      githubUrl: '#',
-      gradient: 'from-purple-500 to-indigo-600'
+      liveUrl: 'https://smart-todo-woad.vercel.app/',
+      githubUrl: 'https://github.com/Raghavverma109/Smart-TODO', 
+      gradient: 'from-gray-800 to-indigo-900'
     }
-
-
-
   ];
 
   return (
