@@ -1,5 +1,6 @@
+
 import React from 'react';
-import TechStack3D from './TechStack3D';
+import Skills3D from './Skills3D';
 
 const Skills = () => {
   const skillCategories = [
@@ -43,27 +44,22 @@ const Skills = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto mb-8"></div>
         </div>
 
-        <div className="mb-16 ">
-          <TechStack3D />
-        </div>
+        {/* <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">Interactive Skills Showcase</h3>
+          <Skills3D />
+        </div> */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={index} className="group relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:-translate-y-2">
-              <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${category.color} transition-all duration-300 group-hover:h-2`}></div>
-              
-              <div className="p-8 pt-10">
-                <h4 className="text-xl font-extrabold text-gray-900 mb-6 tracking-tight">{category.title}</h4>
-                <div className="flex flex-wrap gap-3">
-                  {category.skills.map((skill, skillIndex) => (
-                    <span 
-                      key={skillIndex} 
-                      className="px-4 py-2 bg-gray-50 border border-gray-100 rounded-xl text-sm font-semibold text-gray-700 hover:bg-white hover:border-gray-200 hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:text-blue-600 hover:-translate-y-1 transition-all duration-300 cursor-default"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
+            <div key={index} className="bg-gray-50 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+              <div className={`h-2 w-full bg-gradient-to-r ${category.color} rounded-full mb-4`}></div>
+              <h4 className="text-xl font-bold text-gray-900 mb-4">{category.title}</h4>
+              <div className="space-y-2">
+                {category.skills.map((skill, skillIndex) => (
+                  <div key={skillIndex} className="flex items-center p-2 bg-white rounded-md hover:bg-gray-100 transition-colors">
+                    <span className="text-gray-700 font-medium">{skill}</span>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
