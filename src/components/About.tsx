@@ -38,7 +38,7 @@ const About = () => {
           {/* Left Content */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Passionate MERN-Stack Developer
+              Passionate Full-Stack Developer
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
               I'm a B.Tech Computer Science student with a strong foundation in full-stack development 

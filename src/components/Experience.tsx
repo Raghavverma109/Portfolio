@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Trophy, Code, Award, BookOpen } from 'lucide-react';
-import { FaCalendarAlt, FaBook } from 'react-icons/fa';
+import { FaCalendarAlt, FaBook, FaLinkedin } from 'react-icons/fa';
 
 
 const achievements = [
@@ -33,9 +33,9 @@ const achievements = [
 const academicData = [
   {
     title: "Bachelor's in Computer Science",
-    institute: "ABES Institute of Technology",
+    institute: "ABES Institute of Technology, Ghaziabad",
     duration: "2022–2026",
-    score: "7.98 CGPA",
+    score: "8.0 CGPA",
     status: "On-Going",
   },
   {
@@ -102,6 +102,79 @@ const Experience = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto mb-8"></div>
         </div>
 
+        {/* Professional Experience */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Professional Experience
+          </h3>
+          <div className="space-y-6">
+            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex-shrink-0 flex items-center justify-center mr-6">
+                  <Code className="text-green-600" size={24} />
+                </div>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-4">
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-2">
+                        Full Stack Developer Intern
+                      </h4>
+                      <p className="text-blue-600 font-semibold mb-2">
+                        SS Dynamics Solutions Pvt. Ltd.
+                      </p>
+                      <div className="flex items-center text-gray-500 text-sm">
+                        <FaCalendarAlt className="mr-2" />
+                        Feb 2026 – Present
+                      </div>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors duration-300 text-sm font-semibold shadow-sm shrink-0">
+                      <FaLinkedin size={18} />
+                      View LinkedIn Post
+                    </a>
+                  </div>
+                  <ul className="text-gray-600 leading-relaxed list-disc list-inside space-y-1">
+                    <li>Built and enhanced 3+ web modules using MERN stack, improving UI responsiveness and performance.</li>
+                    <li>Developed 2+ ERP dashboards using AL in Microsoft Dynamics 365 Business Central, handling business workflows and data reporting.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex-shrink-0 flex items-center justify-center mr-6">
+                  <Code className="text-blue-600" size={24} />
+                </div>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-4">
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-2">
+                        MERN Stack Developer Intern
+                      </h4>
+                      <p className="text-blue-600 font-semibold mb-2">
+                        OutriX
+                      </p>
+                      <div className="flex items-center text-gray-500 text-sm">
+                        <FaCalendarAlt className="mr-2" />
+                        Sep 2025 – Oct 2025
+                      </div>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/raghav-verma-71870627a_mernstack-outrix-activity-7379918477861687297-8XYL?utm_source=share&utm_medium=member_android&rcm=ACoAAEQXoIQBe8BMxOlmn-VFbnrQB2d1ngEw520" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors duration-300 text-sm font-semibold shadow-sm shrink-0">
+                      <FaLinkedin size={18} />
+                      View LinkedIn Post
+                    </a>
+                  </div>
+                  <ul className="text-gray-600 leading-relaxed list-disc list-inside space-y-1">
+                    <li>Developed full-stack MERN applications with a focus on backend and API design.</li>
+                    <li>Led database schema design and implemented secure REST APIs.</li>
+                    <li>Followed Agile methodology with sprint-based deliveries, collaborating with peers on code debugging.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Achievements */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Key Achievements</h3>
@@ -118,50 +191,6 @@ const Experience = () => {
             ))}
           </div>
         </div>
-
-        {/* Professional Experience */}
-      
-
-<div className="mb-16">
-  <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-    Professional Experience
-  </h3>
-  <div className="bg-white rounded-lg shadow-lg p-8">
-    <div className="flex items-start">
-      {/* Icon: Keeping the current style and icon (Code) for development */}
-      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-6">
-        <Code className="text-blue-600" size={24} />
-      </div>
-      <div>
-        {/* Job Title */}
-        <h4 className="text-xl font-bold text-gray-900 mb-2">
-          MERN Stack Developer Intern
-        </h4>
-        
-        {/* Company and Dates */}
-        <p className="text-blue-600 font-semibold mb-2">
-          OutriX
-        </p>
-        <p className="text-gray-500 text-sm mb-4">
-          Sep 2025 – Oct 2025 (1 months)
-        </p>
-
-        {/* Bulleted Description */}
-        <ul className="text-gray-600 leading-relaxed list-disc list-inside space-y-1">
-          <li>
-            Developed **full-stack MERN applications** with a strong focus on backend architecture and **REST API design**.
-          </li>
-          <li>
-            **Led database schema design** for scalable features and implemented **secure APIs** using Express.js.
-          </li>
-          <li>
-            Followed **Agile methodology** with sprint-based deliveries, actively collaborating with peers on code debugging and feature integration.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
 
         {/* Academic Journey */}
         <div className="mb-16">
