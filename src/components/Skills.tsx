@@ -43,8 +43,17 @@ const Skills = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto mb-8"></div>
         </div>
 
-        <div className="mb-16 ">
+        <div className="mb-16 relative">
           <TechStack3D />
+          <div className="absolute bottom-4 right-4 flex items-center gap-2 px-4 py-2 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-full shadow-md pointer-events-none animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 15l-6-6m0 0l6-6m-6 6h12" />
+            </svg>
+            <span className="text-xs font-semibold text-gray-600 tracking-wide">Drag to rotate &amp; explore</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 15l6-6m0 0l-6-6m6 6H3" />
+            </svg>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

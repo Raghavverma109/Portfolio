@@ -64,7 +64,8 @@ const Index = () => {
                     <Github size={20} />
                   </a>
                   <a
-                    href="raghav.verma.3262@gmail.com"
+                    href="#contact"
+                    onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}
                     className="w-12 h-12 bg-yellow-400 text-black rounded-full flex items-center justify-center 
                              hover:bg-yellow-500 transform hover:-translate-y-1 transition-all duration-300"
                   >
