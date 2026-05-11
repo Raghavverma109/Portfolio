@@ -13,6 +13,14 @@ const Certifications = () => {
       link: '#' // You can replace this with a certificate verification link if available
     },
     {
+      title: 'First International Conference on IMPACT 2025',
+      issuer: 'Springer & Birla Institute of Technology, Mesra, Patna',
+      date: 'December, 2025',
+      description: 'Presented a research paper titled "BioVista AI: A Review on Medical Image Understanding and Personalized Medicines Consultation" at IMPACT 2025 (Intelligent Machine Processes and AI-Centric Technologies), held on December 5–6.',
+      image: 'images/IMPACT_Certificate.jpg',
+      link: '#'
+    },
+    {
       title: 'Certificate of Internship', // The title on the certificate
       issuer: 'OutriX', // The issuing organization
       date: 'Oct 1, 2025', // The completion date of the internship

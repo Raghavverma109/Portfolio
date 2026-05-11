@@ -127,7 +127,7 @@ const Experience = () => {
                         Feb 2026 – Present
                       </div>
                     </div>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors duration-300 text-sm font-semibold shadow-sm shrink-0">
+                    <a href="https://www.linkedin.com/posts/raghav-verma-71870627a_big-news-i-just-landed-my-first-job-ugcPost-7449877681900322816-VTjN?utm_source=share&utm_medium=member_android&rcm=ACoAAEQXoIQBe8BMxOlmn-VFbnrQB2d1ngEw520" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors duration-300 text-sm font-semibold shadow-sm shrink-0">
                       <FaLinkedin size={18} />
                       View LinkedIn Post
                     </a>
