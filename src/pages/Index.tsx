@@ -78,7 +78,7 @@ const Index = () => {
                     <Linkedin size={20} />
                   </a>
                   <a
-                    href="tel:+919773829247"
+                    href="tel:+917895483262"
                     className="w-12 h-12 bg-blue-600 text-black rounded-full flex items-center justify-center 
                              hover:bg-blue-700 transform hover:-translate-y-1 transition-all duration-300"
                   >
