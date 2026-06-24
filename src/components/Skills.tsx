@@ -1,38 +1,54 @@
 import React from 'react';
 import TechStack3D from './TechStack3D';
+import {
+  ScrollVelocityContainer,
+  ScrollVelocityRow,
+} from '@/components/ui/scroll-based-velocity';
+import {
+  SiC, SiCplusplus, SiPython, SiJavascript, SiTypescript,
+  SiHtml5, SiCss3, SiTailwindcss,
+  SiReact, SiNextdotjs, SiBootstrap, SiMui,
+  SiNodedotjs, SiExpress, SiSupabase, SiSocketdotio,
+  SiMongodb, SiPostgresql, SiMysql,
+  SiGit, SiGithub, SiPostman, SiDocker, SiVercel,
+} from 'react-icons/si';
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      title: 'Programming Languages',
-      skills: ['C', 'C++','Python','JavaScript','TypeScript'],
-      color: 'from-blue-500 to-purple-600'
-    },
-    {
-      title: 'Frontend ',
-      skills: [ 'HTML5', 'CSS3','JavaScript','Tailwind CSS '],
-      color: 'from-green-500 to-blue-500'
-    },
-    {
-      title: 'Framework / Libraries ',
-      skills: ['ReactJS', 'Next.js', 'React native', 'Bootstrap', 'Material UI'],
-      color: 'from-green-500 to-blue-500'
-    },
-    {
-      title: 'Backend ',
-      skills: ['Node.js', 'Express.js','Supabase', 'RESTful APIs','Socket.IO'],
-      color: 'from-orange-500 to-red-500'
-    },
-    {
-      title: 'Databases',
-      skills: ['MongoDB', 'SQL','PostgreSQL'],
-      color: 'from-purple-500 to-pink-500'
-    },
-    {
-      title: 'Tools & Others',
-      skills: ['Git', 'GitHub','Postman','Docker', 'Vercel','Render'],
-      color: 'from-gray-600 to-gray-800'
-    }
+  // Row 1: Languages + Frontend
+  const row1 = [
+    { icon: SiC, label: 'C', color: '#A8B9CC' },
+    { icon: SiCplusplus, label: 'C++', color: '#00599C' },
+    { icon: SiPython, label: 'Python', color: '#3776AB' },
+    { icon: SiJavascript, label: 'JavaScript', color: '#F7DF1E' },
+    { icon: SiTypescript, label: 'TypeScript', color: '#3178C6' },
+    { icon: SiHtml5, label: 'HTML5', color: '#E34F26' },
+    { icon: SiCss3, label: 'CSS3', color: '#1572B6' },
+    { icon: SiTailwindcss, label: 'Tailwind CSS', color: '#06B6D4' },
+  ];
+
+  // Row 2: Frameworks / Libraries
+  const row2 = [
+    { icon: SiReact, label: 'ReactJS', color: '#61DAFB' },
+    { icon: SiNextdotjs, label: 'Next.js', color: '#000000' },
+    { icon: SiReact, label: 'React Native', color: '#61DAFB' },
+    { icon: SiBootstrap, label: 'Bootstrap', color: '#7952B3' },
+    { icon: SiMui, label: 'Material UI', color: '#007FFF' },
+    { icon: SiNodedotjs, label: 'Node.js', color: '#339933' },
+    { icon: SiExpress, label: 'Express.js', color: '#000000' },
+    { icon: SiSupabase, label: 'Supabase', color: '#3ECF8E' },
+    { icon: SiSocketdotio, label: 'Socket.IO', color: '#010101' },
+  ];
+
+  // Row 3: Databases + Tools
+  const row3 = [
+    { icon: SiMongodb, label: 'MongoDB', color: '#47A248' },
+    { icon: SiMysql, label: 'SQL', color: '#4479A1' },
+    { icon: SiPostgresql, label: 'PostgreSQL', color: '#4169E1' },
+    { icon: SiGit, label: 'Git', color: '#F05032' },
+    { icon: SiGithub, label: 'GitHub', color: '#181717' },
+    { icon: SiPostman, label: 'Postman', color: '#FF6C37' },
+    { icon: SiDocker, label: 'Docker', color: '#2496ED' },
+    { icon: SiVercel, label: 'Vercel', color: '#000000' },
   ];
 
   return (
@@ -56,26 +72,35 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="group relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:-translate-y-2">
-              <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${category.color} transition-all duration-300 group-hover:h-2`}></div>
-              
-              <div className="p-8 pt-10">
-                <h4 className="text-xl font-extrabold text-gray-900 mb-6 tracking-tight">{category.title}</h4>
-                <div className="flex flex-wrap gap-3">
-                  {category.skills.map((skill, skillIndex) => (
-                    <span 
-                      key={skillIndex} 
-                      className="px-4 py-2 bg-gray-50 border border-gray-100 rounded-xl text-sm font-semibold text-gray-700 hover:bg-white hover:border-gray-200 hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:text-blue-600 hover:-translate-y-1 transition-all duration-300 cursor-default"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+        <div className="relative">
+          <ScrollVelocityContainer className="gap-y-8">
+            <ScrollVelocityRow baseVelocity={12} direction={1}>
+              {row1.map(({ icon: Icon, label, color }) => (
+                <div key={label} className="flex items-center gap-3 px-5 py-3 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 mx-3 select-none">
+                  <Icon style={{ color }} className="w-7 h-7 shrink-0" />
+                  <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">{label}</span>
                 </div>
-              </div>
-            </div>
-          ))}
+              ))}
+            </ScrollVelocityRow>
+            <ScrollVelocityRow baseVelocity={12} direction={-1}>
+              {row2.map(({ icon: Icon, label, color }) => (
+                <div key={label} className="flex items-center gap-3 px-5 py-3 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 mx-3 select-none">
+                  <Icon style={{ color }} className="w-7 h-7 shrink-0" />
+                  <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">{label}</span>
+                </div>
+              ))}
+            </ScrollVelocityRow>
+            <ScrollVelocityRow baseVelocity={12} direction={1}>
+              {row3.map(({ icon: Icon, label, color }) => (
+                <div key={label} className="flex items-center gap-3 px-5 py-3 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 mx-3 select-none">
+                  <Icon style={{ color }} className="w-7 h-7 shrink-0" />
+                  <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">{label}</span>
+                </div>
+              ))}
+            </ScrollVelocityRow>
+          </ScrollVelocityContainer>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-white to-transparent z-10"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-white to-transparent z-10"></div>
         </div>
       </div>
     </section>

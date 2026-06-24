@@ -1,33 +1,27 @@
 import React, { useEffect } from 'react';
 import { Trophy, Code, Award, BookOpen } from 'lucide-react';
 import { FaCalendarAlt, FaBook, FaLinkedin } from 'react-icons/fa';
-
+import AchievementCard from './AchievementCard';
 
 const achievements = [
   {
-    icon: Trophy,
-    title: 'Smart India Hackathon 2024 - Finalist',
-    subtitle: 'Top 5 Runner-up',
-    description: 'Secured top position among 500+ teams for solving challenging problem statement',
-    color: 'text-yellow-600',
-    bgColor: 'bg-yellow-50'
+    title: "Smart India Hackathon '24 Winner",
+    description: "Secured a top 5 runner-up position among 500+ teams in the world's biggest hackathon.",
+    imageUrl: '/images/SIH.jpg',
+    readMoreLink: '#',
   },
   {
-    icon: Code,
     title: 'LeetCode Progress',
-    subtitle: '190+ Problems Solved',
-    description: 'Consistent problem-solving in Data Structures and Algorithms',
-    color: 'text-green-600',
-    bgColor: 'bg-green-50'
+    description: 'Consistent problem-solving with over 190+ Data Structures and Algorithms problems solved.',
+    imageUrl: '/images/codeChef.jpg',
+    readMoreLink: '#',
   },
   {
-    icon: Award,
     title: 'Hackathon Participation',
-    subtitle: 'Multiple Events',
-    description: 'Active participant in various hackathons and coding competitions',
-    color: 'text-blue-600',
-    bgColor: 'bg-blue-50'
-  }
+    description: 'Active participant and winner in various hackathons and coding competitions.',
+    imageUrl: '/images/MERN.png',
+    readMoreLink: '#',
+  },
 ];
 
 const academicData = [
@@ -36,7 +30,7 @@ const academicData = [
     institute: "ABES Institute of Technology, Ghaziabad",
     duration: "2022–2026",
     score: "8.0 CGPA",
-    status: "On-Going",
+    status: "Completed",
   },
   {
     title: "Senior Secondary School (CBSE)",
@@ -180,14 +174,13 @@ const Experience = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Key Achievements</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {achievements.map((achievement, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                <div className={`w-16 h-16 ${achievement.bgColor} rounded-lg flex items-center justify-center mb-4`}>
-                  <achievement.icon className={achievement.color} size={32} />
-                </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">{achievement.title}</h4>
-                <p className="text-blue-600 font-semibold mb-3">{achievement.subtitle}</p>
-                <p className="text-gray-600">{achievement.description}</p>
-              </div>
+              <AchievementCard
+                key={index}
+                title={achievement.title}
+                description={achievement.description}
+                imageUrl={achievement.imageUrl}
+                readMoreLink={achievement.readMoreLink}
+              />
             ))}
           </div>
         </div>
