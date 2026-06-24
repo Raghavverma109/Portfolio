@@ -29,13 +29,22 @@ const SocialIcons = {
       <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
     </svg>
   ),
+  leetcode: (props: IconProps) => (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path
+        fill="currentColor"
+        d="M13.483 0a1.5 1.5 0 00-1.06.44L6.11 6.753a1.5 1.5 0 102.122 2.12l6.313-6.313A1.5 1.5 0 0013.483 0zM9.06 10.69a1.5 1.5 0 100 3h8.44a1.5 1.5 0 100-3H9.06zM5.636 8.37a1.5 1.5 0 00-2.12 0l-2.078 2.078a4.92 4.92 0 000 6.96l2.078 2.078a4.92 4.92 0 006.96 0l2.078-2.078a1.5 1.5 0 10-2.121-2.121l-2.078 2.078a1.92 1.92 0 01-2.718 0l-2.078-2.078a1.92 1.92 0 010-2.718l2.078-2.078a1.5 1.5 0 000-2.121z"
+      />
+    </svg>
+  ),
 };
 
 const socialLinks = [
   { href: 'https://github.com/Raghavverma109/', label: 'GitHub', icon: SocialIcons.github },
   { href: 'https://www.linkedin.com/in/raghav-verma-71870627a/', label: 'LinkedIn', icon: SocialIcons.linkedin },
-  { href: 'mailto:contact@raghavverma.dev', label: 'Email', icon: Mail },
+  { href: 'mailto:raghav.verma.3262@gmail.com', label: 'Email', icon: Mail },
   { href: 'tel:+917895483262', label: 'Phone', icon: Phone },
+  { href: 'https://leetcode.com/u/Raghav_verma/', label: 'LeetCode', icon: SocialIcons.leetcode }, 
 ];
 
 const Index = () => {
@@ -124,9 +133,9 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full animate-float shadow-2xl ">
                     <div className="absolute inset-2 bg-white rounded-full">
                       <img
-                        src="images/DP.jpg"
+                        src="images/DP.jpeg"
                         alt="Raghav photo"
-                        className="w-full h-full rounded-full object-cover transform rotate-[-6deg]"
+                        className="w-full h-full rounded-full object-cover transform rotate-[0deg]"
                       />
 
                     </div>

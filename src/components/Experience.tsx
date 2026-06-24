@@ -13,13 +13,13 @@ const achievements = [
   {
     title: 'LeetCode Progress',
     description: 'Consistent problem-solving with over 190+ Data Structures and Algorithms problems solved.',
-    imageUrl: '/images/codeChef.jpg',
+    imageUrl: '/images/leetcode.png',
     readMoreLink: '#',
   },
   {
     title: 'Hackathon Participation',
     description: 'Active participant and winner in various hackathons and coding competitions.',
-    imageUrl: '/images/MERN.png',
+    imageUrl: '/images/hackathons.jpg',
     readMoreLink: '#',
   },
 ];
