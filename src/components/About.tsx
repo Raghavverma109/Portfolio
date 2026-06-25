@@ -63,7 +63,7 @@ const About = () => {
 
             <div className="flex flex-wrap gap-4">
               <div className="bg-blue-100 px-4 py-2 rounded-full">
-                <span className="text-blue-800 font-semibold">8.0 CGPA</span>
+                <span className="text-blue-800 font-semibold">8.1 CGPA</span>
               </div>
               <div className="bg-green-100 px-4 py-2 rounded-full">
                 <span className="text-green-800 font-semibold">190+ LeetCode</span>

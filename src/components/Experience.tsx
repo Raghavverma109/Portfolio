@@ -32,7 +32,7 @@ const academicData = [
     title: "Bachelor's in Computer Science",
     institute: "ABES Institute of Technology, Ghaziabad",
     duration: "2022–2026",
-    score: "8.0 CGPA",
+    score: "8.1 CGPA",
     status: "Completed",
     // want to use two photos on each item
     image: '/images/college.jpg, /images/college.png',
@@ -192,7 +192,7 @@ const Experience = () => {
 
         {/* Achievements */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center"> evements</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center"> Achievements</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {achievements.map((achievement, index) => (
               <AchievementCard

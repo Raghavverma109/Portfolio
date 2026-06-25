@@ -33,7 +33,7 @@ const About = () => {
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <GraduationCap className="text-blue-600 mb-3" size={32} />
                 <h3 className="text-lg font-semibold mb-2">Education</h3>
-                <p className="text-gray-600">B.Tech CSE (Data Science) - 8.0 CGPA</p>
+                <p className="text-gray-600">B.Tech CSE (Data Science) - 8.1 CGPA</p>
                 <p className="text-sm text-gray-500">ABES Institute of Technology</p>
               </div>
               
