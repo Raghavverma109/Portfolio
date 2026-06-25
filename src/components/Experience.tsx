@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { Trophy, Code, Award, BookOpen } from 'lucide-react';
 import { FaCalendarAlt, FaBook, FaLinkedin } from 'react-icons/fa';
 import AchievementCard from './AchievementCard';
+import FlowingMenu from './FlowingMenu';
+import './FlowingMenu.css';
+
 
 const achievements = [
   {
@@ -31,6 +34,9 @@ const academicData = [
     duration: "2022–2026",
     score: "8.0 CGPA",
     status: "Completed",
+    // want to use two photos on each item
+    image: '/images/college.jpg, /images/college.png',
+    link: '#'
   },
   {
     title: "Senior Secondary School (CBSE)",
@@ -38,6 +44,8 @@ const academicData = [
     duration: "2020–2022",
     score: "89%",
     status: "Completed",
+    image: '/images/class12.jpeg, /images/class12th.jpg',
+    link: '#'
   },
   {
     title: "High School (CBSE)",
@@ -45,8 +53,20 @@ const academicData = [
     duration: "2018–2020",
     score: "85%",
     status: "Completed",
+    image: '/images/class10.jpg, /images/class10.jpg',
+    link: '#'
   },
 ];
+
+const academicItems = academicData.map(item => ({
+  link: item.link,
+  text: item.title,
+  image: item.image,
+  institute: item.institute,
+  duration: item.duration,
+  score: item.score,
+}));
+
 
 const statusColors = {
   "Completed": "bg-purple-600",
@@ -56,6 +76,7 @@ const statusColors = {
 const Experience = () => {
   useEffect(() => {
     const container = document.getElementById("bubble-container");
+    if (!container) return;
     const colors = [
       "rgb(34,197,94)", "rgb(59,130,246)", "rgb(236,72,153)",
       "rgb(245,158,11)", "rgb(139,92,246)"
@@ -102,7 +123,7 @@ const Experience = () => {
             Professional Experience
           </h3>
           <div className="space-y-6">
-            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white rounded-t-3xl rounded-b-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex-shrink-0 flex items-center justify-center mr-6">
                   <Code className="text-green-600" size={24} />
@@ -134,7 +155,7 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white rounded-t-3xl rounded-b-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex-shrink-0 flex items-center justify-center mr-6">
                   <Code className="text-blue-600" size={24} />
@@ -171,7 +192,7 @@ const Experience = () => {
 
         {/* Achievements */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Key Achievements</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center"> evements</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {achievements.map((achievement, index) => (
               <AchievementCard
@@ -184,46 +205,23 @@ const Experience = () => {
             ))}
           </div>
         </div>
+      </div>
 
-        {/* Academic Journey */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Academic Journey</h3>
-          <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-            Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
-          </p>
-          <div className="space-y-6 max-w-3xl mx-auto">
-            {academicData.map((item, index) => (
-              <div
-                key={index}
-                className="relative bg-white rounded-xl shadow-md p-6 border border-purple-100 hover:border-purple-300  transform transition duration-300  hover:scale-[1.10] hover:shadow-4xl hover:z-10"
-                style={{
-                  boxShadow:
-                    item.status === "Completed"
-                      ? "0 8px 30px rgba(139,92,246,0.2)"
-                      : "0 8px 20px rgba(59,130,246,0.2)",
-                }}
-              >
-
-                <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-                <p className="text-gray-600">{item.institute}</p>
-                <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mt-3">
-                  <div className="flex items-center gap-1">
-                    <FaCalendarAlt className="text-blue-600" />
-                    {item.duration}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <FaBook className="text-purple-600" />
-                    {item.score}
-                  </div>
-                  <div
-                    className={`ml-auto text-white px-3 py-1 rounded-full text-xs font-medium ${statusColors[item.status]}`}
-                  >
-                    {item.status}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* Academic Journey */}
+      <div className="relative z-10 w-full mb-16">
+        <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Academic Journey</h3>
+        <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto px-4">
+          Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
+        </p>
+        <div style={{ height: '600px', position: 'relative' }}>
+          <FlowingMenu items={academicItems}
+            speed={15}
+            textColor="#1e293b"
+            bgColor="#f8fafc"
+            marqueeBgColor="#0f172a"
+            marqueeTextColor="#f8fafc"
+            borderColor="#e2e8f0"
+          />
         </div>
       </div>
 

@@ -29,7 +29,7 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-gray-50 overflow-hidden relative">
       {/* Animated Beam — full-height background pinned to right edge of section */}
-      <div className="absolute top-0 right-0 h-full w-1/2 pointer-events-none mr-[5%] select-none z-0 opacity-40">
+      <div className="absolute top-0 right-0 h-full w-full md:w-1/2 pointer-events-none mr-0 md:mr-[5%] mt-[4%] select-none z-0 opacity-50">
         <AnimatedBeamMultipleOutputDemo className="w-full h-full" />
       </div>
     
@@ -47,9 +47,9 @@ const About = () => {
               Passionate Full-Stack Developer
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              I'm a B.Tech Computer Science student with a strong foundation in full-stack development
-              and a passion for creating innovative solutions. Currently maintaining an 8.0 CGPA while
-              actively working on projects that make a real-world impact.
+              I recently completed my B.Tech in Computer Science in 2026 with a CGPA of 8.1,
+              backed by a strong foundation in full-stack development and a passion for creating
+              innovative solutions that make a real-world impact.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               My journey in technology has been driven by curiosity and a desire to solve meaningful problems.
@@ -57,7 +57,7 @@ const About = () => {
               I enjoy the entire process of bringing ideas to life through code.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              When I'm not coding, you'll find me participating in hackathons, solving algorithmic challenges,
+              When I'm not coding, you'll find me solving algorithmic challenges,
               or exploring the latest developments in web technologies and artificial intelligence.
             </p>
 
@@ -77,7 +77,7 @@ const About = () => {
           {/* Right Content */}
           <div className="relative flex items-center justify-end min-h-[500px] w-full">
             {/* Foreground Cards Grid */}
-            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full opacity-60">
               {highlights.map((highlight, index) => (
                 <div
                   key={index}
